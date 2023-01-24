@@ -1,0 +1,119 @@
+<app-home></app-home>
+
+<section id="contact" class="section text-center">
+    <div class="container">
+        <div class="overlay"></div>
+        <div class="container-fluid wrapper">
+        <div class="row">
+            <div class="col-xs-12 wow fadeIn" data-wow-duration="1s" data-wow-offset="200" style="visibility: visible; animation-duration: 1s; animation-name: fadeIn;">
+                <div class="section-intro">
+                    <h2>Keep in touch</h2>
+                    <div class="separator centered"></div>
+                    <p class="para">Here you can find me. I'd like to hear from you all. You can hire me, ask me about anything or buy me coffee.</p>
+                </div>
+            </div>	
+        </div>
+
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="row">
+                    <div class="col-sm-6 col-xs-12 call-info wow fadeInUp" data-wow-duration="1s" data-wow-offset="200" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+                        <div class="info-wrapper">
+                            <i class="fa fa-home fa-fw"></i>
+                            <h4>My Place</h4>
+                            <p class="para">1234 st, Darlon city, Egypt <br> 414220</p>
+                        </div>	
+                    </div>
+                    <div class="col-sm-6 col-xs-12 call-info wow fadeInUp" data-wow-duration="1s" data-wow-offset="200" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+                        <div class="info-wrapper">
+                            <i class="fa fa-phone fa-fw"></i>
+                            <h4>Call Me</h4>
+                            <p class="para"><a href="tel:+201098766316">(+020) 109 8766 316</a> <br> <a href="tel:+201146895896">(+020) 114 6895 896</a>  </p>
+                        </div>	
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12 call-info wow fadeInUp" data-wow-duration="1s" data-wow-offset="200" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+                        <div class="info-wrapper">
+                            <i class="fa fa-envelope-o fa-fw"></i>
+                            <h4>Send Message</h4>
+                            <p class="para"> <a href="mailto:aahmedosama165@gmail.com">aahmedosama165@gmail.com</a>
+                            </p>
+                        </div>	
+                    </div>
+                    <div class="col-sm-6 col-xs-12 call-info wow fadeInUp" data-wow-duration="1s" data-wow-offset="200" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+                        <div class="info-wrapper">
+                            <i class="fa fa-clock-o fa-fw"></i>
+                            <h4>Work Time</h4>
+                            <p class="para">Sat - Thr : 8.00 - 16.00 <br> Friday: Holiday</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 wow fadeInUp" data-wow-duration="1s" data-wow-offset="200" style="visibility: visible; animation-duration: 1s; animation-name: fadeInUp;">
+                <!-- Start Contact Form -->
+                <form [formGroup] = "massageGroup" id="contact-form" >
+                    <div class="form-intro">
+                        <h4>Leave Me A Message</h4>
+                        <div class="separator"></div>
+                        <p class="para">You can ask me about anything here, just type your name and e-mail and I'll answer you as soon as possible</p>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label for="name" class="input-group-addon">
+                                <span class="glyphicon glyphicon-user"><i class="fa-solid fa-user"></i></span>
+                            </label>
+                            <input type="text" placeholder="Your Name" class="form-control col-xs-12" id="name" formControlName="name" required="" (blur)="openKey()">
+                        </div>							
+                        <span class="help-block with-errors">
+                            <span class="error" *ngIf="(f.name?.invalid && (f.name?.touched || f.name?.dirty) || f.name?.errors?.invalidname || f.name.errors?.required ) && key" >Please enter a correct name.</span>
+                        </span>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label for="mail" class="input-group-addon">
+                                <span class="glyphicon glyphicon-envelope"><i class="fa-solid fa-envelope"></i></span>
+                            </label>
+                            <input type="email" placeholder="Your E-mail" class="form-control col-xs-12" id="mail" name="mail" formControlName="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" (blur)="openKey2()" required="">
+                        </div>							
+                        <span class="help-block with-errors">
+                            <span *ngIf="(f.email?.errors?.email || f.email?.errors?.required)&&key2">Please enter a correct email.</span>   
+                        </span>
+                    </div>
+                    <div class="form-group">					
+                        <div class="input-group">
+                            <label for="message" class="input-group-addon">
+                                <span class="glyphicon glyphicon-comment"><i class="fa-solid fa-message"></i></span>
+                            </label>
+                            <textarea class="form-control" rows="4" id="message" name="message" placeholder="Type your message" formControlName="message"></textarea>
+                        </div>				
+                        <span class="help-block with-errors">
+                            <span *ngIf="(f.message?.touched || f.message?.dirty) && f.message.errors?.required ">Message Requierd</span>   
+                        </span>
+                    </div>
+                    <div class="mt-4">
+                        <button type="submit" id="submit" (click)="submit(massageGroup.value)"  [disabled]="massageGroup.invalid" class="btn btn-custom btn-block ">Send Message</button>
+                    </div>					
+                </form>  <!-- End Contact Form -->
+                <div class="form-response" id="my-form-status" *ngIf="msg">{{msg}}</div>    
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 social-wrapper wow fadeInLeft" data-wow-duration="1s" data-wow-offset="100" style="visibility: visible; animation-duration: 1s; animation-name: fadeInLeft;">
+                <h4>follow me here :</h4>
+                <!-- Follow Me Social Links -->
+                <div class="social-links">
+                    <a href="https://facebook.com/DoO0o0OoN/" class="icon fb"></a> <!-- Facebook Link -->
+                    <!-- <a href="#" class="icon tw"></a> Twitter Link -->
+                    <a href="https://github.com/Ahmed-Osama-Mohammed" class="icon gh"></a> <!-- Github Link -->
+                    <!-- <a href="#" class="icon cp"></a> Codepen Link -->
+                    <a href=" linkedin.com/ahmed-osama-mohammed" class="icon li"></a> <!-- Linkedin Link -->
+                    <a href="mailto:aahmedosama165@gmail.com" class="icon gm"></a> <!-- Linkedin Link -->
+                    <!-- <a href="#" class="icon dr"></a> Dribbble Link -->
+                    <!-- <a href="#" class="icon be"></a> Behance Link -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>

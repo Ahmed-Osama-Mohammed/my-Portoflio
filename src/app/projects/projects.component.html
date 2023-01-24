@@ -1,0 +1,67 @@
+<app-home></app-home>
+
+<section id="portfolio" class="section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="section-intro">
+                    <h2>Check out my works</h2>
+                    <div class="separator centered"></div>
+                    <p class="para">A selection of my past work, highlighting my skills and experience as a front-end developer, It showcases my ability to design and develop visually appealing, responsive and user-friendly web applications</p>
+                </div>
+            </div>
+        </div>
+        <div id="Container" class="row">
+            <div class="mix design branding col-md-4 col-sm-6 col-xs-12 mb-4" *ngFor="let project of projects ; let i=index">
+                    <div class="project" data-toggle="modal" data-target="#modal" (click)="selectProject(i)">
+                        <div class="project-img-wrapper">
+                            <img class="center-block img-responsive" [src]=project.img alt="project-1">
+                    </div>
+                    <div class="img-overlay">
+                        <div class="overlay-text">
+                            <h4>{{project.name}}</h4>
+                        </div>
+                    </div>
+                </div>	
+            </div>
+       
+            </div>
+            
+            
+            <div class="bg" >
+                <div class="selected">
+                    <div class="selected-header">
+                        <h4 class="title" >{{selectedProject.name}}</h4>
+                        <button type="button" class="btn-close" aria-label="Close" (click)="close()" ></button>
+                    </div>
+                    <div class="selected-body">
+                        <div class="selected-img-wrapper">
+                            <img (mouseover)="hover=true" (mouseleave)="hover=false"  [ngStyle]=" hover ? 
+                            {'bottom':selectedProject.imgHeight}:
+                            {}" [src]=selectedProject.img [alt]=selectedProject.name >
+                        </div>
+                        <div class="selected-text">
+            <h4>{{selectedProject.name}}</h4>
+            <div class="separator"></div>
+            <p class="para project-description">
+                {{selectedProject.description}}
+            </p>
+           <div class="button-sets">
+               <a [href]=selectedProject.link class="btn btn-custom btn-custom-reverse">Live Preview</a>
+               <a  [routerLink]='["/contact"]' (click)="scroll('contact')" class="btn btn-custom dark scroll-link" >Start A Project</a>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>      
+<div class="row">
+    <div class="col-xs-12 interested">
+        <h2 class="it" >Interested?</h2>
+        <div class="separator centered is" ></div>
+        <p class="para ip">Intrinsicly conceptualize real-time information without cross functional potentialities. <br>Synergistically implement accurate mindshare before scalable synergy.</p>
+        <a  [routerLink]='["/contact"]' (click)="scroll('contact')" class="scroll-link btn btn-custom dark ib">Let's Go!</a>
+    </div>
+</div>
+</div>
+</section>
+

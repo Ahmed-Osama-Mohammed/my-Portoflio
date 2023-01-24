@@ -1,0 +1,303 @@
+<app-home></app-home>
+<section id="about" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="profile-intro text-center">
+                    <div class="profile-img-wrapper wow ">
+                        <img class="img-responsive img-circle" src="../../assets/profile-pic.jpg" alt="Ahmed profile">
+                    </div>
+                    <h2>Ahmed Osama</h2>
+                    <div class="separator centered"></div>
+                    <p class="title">Front-end Developer.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-xm-12 mb-5">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                About Me
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>
+
+                                    Experienced front-end developer with 3 years of experience in developing
+                                    and implementing high-quality websites and web applications. Strong skills
+                                    in Angular, Vue.js, Typescript, HTML5, CSS3, Sass, JavaScript , Es6 ,
+                                    Bootstrap and jQuery,. Proven track record of creating visually appealing
+                                    and user-friendly websites that meet the needs of clients.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Why Me?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <ol>
+                                    <li>Strong experience in designing and developing responsive and user-friendly
+                                        websites and web applications.</li>
+                                    <li>Proficient in modern front-end technologies such as HTML, CSS, JavaScript, and
+                                        jQuery.</li>
+                                    <li>Experience with popular front-end frameworks such as Angular, and Vue.js.
+                                    </li>
+                                    <li>Strong attention to detail and ability to create visually appealing and
+                                        intuitive interfaces.</li>
+                                    <li>Strong problem-solving and debugging skills to quickly identify and fix issues.
+                                    </li>
+                                    <li>Familiarity with best practices and web standards to ensure optimal performance
+                                        and accessibility.</li>
+                                    <li>Proven ability to work effectively in a team environment and to meet tight
+                                        deadlines.</li>
+                                    <li>Strong communication skills and ability to work closely with designers,
+                                        developers, and stakeholders to understand project requirements and deliver
+                                        high-quality solutions.</li>
+                                    <li>Strong portfolio that demonstrates my skills and experience.</li>
+                                    <li>Strong knowledge in web optimization techniques to achieve high performance and
+                                        fast loading.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                My vision
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <p>My vision as a front-end developer is to create beautiful, intuitive, and accessible
+                                    digital experiences that delight users and achieve business goals. I strive to stay
+                                    up-to-date with the latest technologies and design trends, and to use them to create
+                                    cutting-edge web applications that are fast, responsive, and easy to use. I believe
+                                    in the power of collaboration and strive to work closely with designers, developers,
+                                    and stakeholders to create high-quality solutions that meet the needs of users and
+                                    exceed their expectations. I am committed to creating accessible, inclusive, and
+                                    user-centered designs that make the web a more equitable place for all. My ultimate
+                                    goal is to become an expert in front-end development and to use my skills to create
+                                    impactful and meaningful web applications that improve people's lives.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xm-12">
+                <div class="profile text-center ">
+
+                    <h4>Personal Info</h4>
+                    <div class="separator centered"></div>
+                    <p class="para"><span class="highlight">My Name:</span> Ahmed Osama</p>
+                    <p class="para"><span class="highlight">Nationality:</span> Egyptian</p>
+                    <p class="para"><span class="highlight">Date Of Birth:</span> 27-08-1997</p>
+                    <p class="para"><span class="highlight">E-mail:</span> <a href="mailto:aahmedosama165@gmail.com">
+                            aahmedosama165@gmail.com</a></p>
+                    <p class="para"><span class="highlight">LinkedIn:</span> <a href="https://www.linkedin.com/in/ahmed-osama-mohammed/"> linkedin.com/ahmed-osama-mohammed</a></p>
+                    <p class="para"><span class="highlight">Github:</span> <a href="https://github.com/Ahmed-Osama-Mohammed"> github.com/Ahmed-Osama-Mohammed</a></p>
+                    <p class="para"><span class="highlight">My Phone:</span> <a href="tel:00201098766316"> +20 109
+                            8766 316</a>
+                           / <a href="tel:00201146895896"> +20 114
+                                6895 896</a></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="ready" class="section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3 class="text-ready">I'm Ready For your Projects. Hire Me Now</h3>
+                <a [routerLink]='["/contact"]' (click)="scroll('contact')"
+                    class=" hire scroll-link btn btn-custom light outline-white">Contact me</a>
+                <a href="../../assets/Ahmed Osama CV.png" download="Ahmed Osama -CV.pdf"
+                    class=" cv btn btn-custom dark outline-white "><i class="fa fa-download"></i> My resume</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="process" class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="section-intro text-center ">
+                    <h2>How I Do It</h2>
+                    <div class="separator centered"></div>
+                    <p class="para">My process and approach to front-end development. It covers the mechanism I use to plan, design, develop, and produce high-quality web solutions</p>
+                </div>
+            </div>
+        </div>
+        <!-- Step 1 -->
+        <div class="row process-step">
+            <div class="col-sm-7 mb-4">
+                <div class="process-text p-t-1">
+                    <i class="fa fa-bar-chart"></i>
+                    <h3>Planning</h3>
+                    <div class="separator"></div>
+                    <p class="para">I use project planning skills to create detailed plans, timelines, and roadmaps. I also use agile methodologies to break down projects into manageable chunks, prioritize tasks, and regularly communicate with the team and stakeholders to ensure smooth project execution.</p>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="process-img  p-i-1">
+                    <img src="../../assets/01.jpg" alt="Planning" class="img-responsive">
+                </div>
+            </div>
+        </div>
+        <!-- Step 2 -->
+        <div class="row process-step">
+            <div class="col-sm-7 order-md-last mb-4">
+                <div class="process-text p-t-2">
+                    <i class="fa fa-pencil"></i>
+                    <h3>Designing</h3>
+                    <div class="separator"></div>
+                    <p class="para"> I use my design skills to create visually appealing and engaging interfaces, wireframes and mockups, to communicate design ideas and ensure that the final product meets the client's needs.</p>
+                </div>
+            </div>
+            <div class="col-sm-5 order-md-first">
+                <div class="process-img  p-i-2">
+                    <img src="../../assets/02.jpg" alt="Designing" class="img-responsive">
+                </div>
+            </div>
+        </div>
+        <!-- Step 3 -->
+        <div class="row process-step">
+            <div class="col-sm-7 mb-4">
+                <div class="process-text p-t-3">
+                    <i class="fa fa-code"></i>
+                    <h3>Development</h3>
+                    <div class="separator"></div>
+                    <p class="para">I am familiar with best practices and web standards to ensure optimal performance and accessibility of the websites and web applications. Additionally, I am able to use debugging and problem-solving skills to quickly identify and fix any issues that may arise during the development process. I am also able to work effectively in a team environment and to meet tight deadlines to deliver high-quality solutions.</p>
+                </div>
+            </div>
+            <div class="col-sm-5">
+                <div class="process-img  p-i-3">
+                    <img src="../../assets/03.jpg" alt="Development" class="img-responsive">
+                </div>
+            </div>
+        </div>
+        <!-- Step 4 -->
+        <div class="row process-step">
+            <div class="col-sm-7 order-md-last mb-4">
+                <div class="process-text p-t-4">
+                    <i class="fa fa-tv"></i>
+                    <h3>Production</h3>
+                    <div class="separator"></div>
+                    <p class="para">I can manage the production process of web applications by ensuring that code is properly tested, optimized, and deployed. I also provide ongoing maintenance and support to ensure that applications are running smoothly.</p>
+                </div>
+            </div>
+            <div class="col-sm-5 order-md-first">
+                <div class="process-img  p-i-4">
+                    <img src="../../assets/04.jpg" alt="Production" class="img-responsive">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="fun-facts" class="section text-center">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="section-intro">
+                    <h2 class="fun-text">fun facts</h2>
+                    <div class="separator centered"></div>
+                    <em>“Every great developer you know got there by solving problems they were unqualified to solve
+                        until they actually did it.”</em>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="services" class="section text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="section-intro">
+                    <h2>what can i do</h2>
+                    <div class="separator centered"></div>
+                    <p class="para">highlight on my expertise and capabilities as a front-end developer. It showcases my ability to design, develop and maintain responsive and user-friendly websites, web applications that meet business goals and exceed user expectations.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Service No. ( 1 ) -->
+            <div class="service col-md-4 col-sm-6 mb-5 s1 ">
+                <i class="fa fa-paint-brush"></i>
+                <h4>Graphic Design</h4>
+                <p class="para">I can create visually appealing and engaging interfaces using Adobe Creative Suite and bring a unique perspective to development by working closely with designers.</p>
+            </div>
+            <!-- Service No. ( 2 ) -->
+            <div class="service col-md-4 col-sm-6 mb-5 s2">
+                <i class="fa fa-object-group"></i>
+                <h4>Web Design</h4>
+                <p class="para">I can design and develop responsive and user-friendly websites and web applications that meet business goals and exceed user expectations.</p>
+            </div>
+            <!-- Service No. ( 3 ) -->
+            <div class="service col-md-4 col-sm-6 mb-5 s3 ">
+                <i class="fa fa-code"></i>
+                <h4>Development</h4>
+                <p class="para">I can design, code, and implement efficient and optimized web applications using various front-end technologies and frameworks.</p>
+            </div>
+            <!-- Service No. ( 4 ) -->
+            <div class="service col-md-4 col-sm-6 mb-5 s4">
+                <i class="fa fa-envira"></i>
+                <h4>branding</h4>
+                <p class="para">I can create and implement a consistent visual language and user experience that aligns with a company's brand and values.</p>
+            </div>
+            <!-- Service No. ( 5 ) -->
+            <div class="service col-md-4 col-sm-6 mb-5 s5">
+                <i class="fa fa-support"></i>
+                <h4>24/7 support</h4>
+                <p class="para">I can provide 24/7 technical support and maintenance for websites and web applications to ensure smooth operation and quick resolution of any issues.</p>
+            </div>
+            <!-- Service No. ( 6 ) -->
+            <div class="service col-md-4 col-sm-6 mb-5 s6">
+                <i class="fa fa-eye"></i>
+                <h4>Retina Ready</h4>
+                <p class="para">I can create high-resolution and Retina-ready designs that ensure a clear and crisp display on all devices, even on high-density screens.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="quote" class="section">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 text-center">
+                <div class="section-intro">
+                    <h2>Do You Like My Services?</h2>
+                    <div class="separator centered"></div>
+                    <p class="para">Completely orchestrate 24/365 information before best-of-breed core competencies.
+                        Collaboratively unleash customized functionalities.</p>
+                    <a [routerLink]='["/contact"]' (click)="scroll('contact')"
+                        class="scroll-link btn btn-custom reverse dark hire2">Hire me now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

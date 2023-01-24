@@ -1,0 +1,162 @@
+.section {
+    padding: 80px 0 40px;
+}
+.section-intro {
+    margin-bottom: 60px;
+}
+h2{
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #333;
+    margin-top: 0;
+}
+.separator.centered {
+    margin: 10px auto;
+}
+.separator {
+    background: var(--main-color1);
+}
+.separator {
+    position: relative;
+    width: 70px;
+    height: 3px;
+    margin: 10px 0;
+}
+.section-intro p {
+    width: 75%;
+    margin: 0 auto;
+}
+p.para ,ul.para{
+    font-family: "Open Sans", sans-serif;
+    line-height: 24px;
+    color: #777;
+}
+#experiences .timeline {
+    margin-top: 40px;
+}
+#experiences .timeline .event {
+    margin-bottom: 40px;
+    position: relative;
+
+}
+
+#experiences .timeline .event .event-left {
+    text-align: right;
+    padding: 0 50px;
+    position: relative;
+}
+#experiences .timeline .event .event-left h4 {
+    background: var(--main-color1);
+}
+#experiences .timeline .event .event-left h4 {
+    float: right;
+    margin-top: 0px;
+    padding: 10px 20px;
+    color: #fff;
+}
+#experiences .timeline .event .event-left i {
+    color: var(--main-color1);
+    position: absolute;
+    z-index: 1;
+    right: -16px;
+    top: 7px;
+    display: inline-block;
+    font-size: 25px;
+}
+#experiences .timeline .event .event-right {
+    text-align: left;
+    padding: 0 50px 0 60px;
+}
+#experiences .timeline .event .event-right::before {
+    background: var(--main-color1);
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: calc(100% - 10px);
+    left: 0;
+    top: 45px;
+}
+#experiences .timeline .event .event-right .content-wrapper {
+    position: relative;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+#experiences .timeline .event .event-right .content-wrapper::before {
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: -10px;
+    border-right: 10px solid #ddd;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+#experiences .timeline .event .event-right h4 {
+    margin-bottom: 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #333;
+    margin-top: 0;
+}
+#experiences .timeline .event .event-right p.job-title {
+    color: #777;
+}
+#experiences .timeline .event .event-right::before {
+    background: var(--main-color1);
+}
+#experiences .timeline .event .event-right::before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: calc(100% - 10px);
+    left: 0;
+    top: 45px;
+}
+#experiences .timeline .event .event-right::after {
+    border: 2px solid #f7465b;
+}
+
+#experiences .timeline .event .event-right::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    -webkit-transform: translateX(-19px) rotate(45deg);
+    -ms-transform: translateX(-19px) rotate(45deg);
+    transform: translateX(-19px) rotate(45deg);
+}
+#experiences .timeline .event .event-right.last-event::before {
+    top: 45px;
+    height: calc(100% - 45px);
+}
+.el1,.el2,.el3,.er1,.er2,.er3{
+    visibility: hidden;
+}
+
+
+@media screen and (max-width:577px){
+
+    #experiences .timeline .event .event-right::before {
+        border:unset;
+        position: unset;
+        width: 0;
+      
+    } 
+    #experiences .timeline .event .event-right::after {
+        border:unset;
+        position: unset;
+        width: 0;
+        height: 0;
+    }
+    #experiences .timeline .event .event-right.last-event::before {
+        top: 45px;
+        height: 0;
+    }
+    #experiences .timeline .event .event-left i {
+        display: none
+    }
+}

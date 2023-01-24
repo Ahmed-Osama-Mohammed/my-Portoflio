@@ -1,0 +1,25 @@
+footer{
+  text-align: center;
+  position: relative;
+  background: #404040;
+  height: 50px;
+  padding: 1%;
+  }
+  .red-color{
+    color: var(--main-color1) !important
+  }
+  h5{
+    color:white;
+    line-height:50px;
+    position: relative;
+  }
+
+
+  @media screen  and (max-width: 600px){
+footer{
+  height: 100px;
+}
+
+  }
+    
+  

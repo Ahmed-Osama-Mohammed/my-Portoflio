@@ -1,0 +1,432 @@
+#contact {
+    background: #333 url(../../assets/bg4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.section {
+    padding: 80px 0 40px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.overlay::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.section-intro {
+    margin-bottom: 60px;
+}
+
+#contact p,
+#contact h2 {
+    color: #fff;
+}
+
+h2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #333;
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.separator.centered {
+    margin: 10px auto;
+}
+
+.separator {
+    background: #f7465b;
+}
+
+.separator {
+    position: relative;
+    width: 70px;
+    height: 3px;
+    margin: 10px 0;
+}
+
+.section-intro p {
+    width: 75%;
+    margin: 0 auto;
+}
+
+p.para {
+    font-family: "Open Sans", sans-serif;
+    line-height: 24px;
+    color: #777;
+}
+
+#contact.parallax {
+    background-attachment: fixed;
+}
+
+#contact p,
+#contact h2 {
+    color: #fff;
+}
+
+#contact .call-info {
+    overflow: hidden;
+}
+
+#contact .call-info .info-wrapper {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    -webkit-transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+    transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+}
+
+#contact .call-info,
+#contact .call-info i,
+#contact .call-info h4 {
+    position: relative;
+    color: #ddd;
+    -webkit-transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+    transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+}
+
+#contact .call-info i {
+    display: inline-block;
+    font-size: 30px;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+    line-height: 60px;
+    border-radius: 50%;
+    color: #fff;
+    top: 50px;
+    background: #f7465b;
+}
+
+#contact .call-info h4 {
+    letter-spacing: 1.5px;
+    color: #fff;
+    top: 50px;
+}
+
+#contact .call-info p {
+    position: relative;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    bottom: -70px;
+    opacity: 0;
+}
+
+#contact .call-info:hover .info-wrapper {
+    background: #f7465b;
+}
+
+#contact .call-info:hover i {
+    color: #f7465b;
+}
+
+#contact .call-info:hover i,
+#contact .call-info:focus i,
+#contact .call-info:active i {
+    background: #fff;
+    top: 0px;
+}
+
+#contact .call-info:hover h4,
+#contact .call-info:focus h4,
+#contact .call-info:active h4 {
+    color: #fff;
+    top: 0px;
+}
+
+#contact .call-info:hover p,
+#contact .call-info:focus p,
+#contact .call-info:active p {
+    color: #fff;
+    bottom: 0px;
+    opacity: 1;
+    -webkit-transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+    transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+}
+
+#contact form .form-intro {
+    margin-bottom: 20px;
+}
+
+#contact .form-intro h4,
+#contact .form-intro p {
+    text-align: left;
+    color: #fff;
+}
+
+#contact form .form-control {
+    border: none;
+    letter-spacing: 2px;
+    color: #eee;
+    background: rgba(139, 145, 150, 0.12);
+    -webkit-transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+    transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+}
+
+#contact form .form-control:focus {
+    background: rgba(139, 145, 150, 0.22);
+}
+
+#contact form label.input-group-addon {
+    border: none;
+    background: rgba(139, 145, 150, 0.42);
+    color: #fff;
+    width: 50px;
+    line-height: 44px;
+    border-radius: 4px;
+}
+
+#contact form input {
+    position: relative;
+    z-index: 1;
+    height: auto;
+    padding: 15px;
+    box-shadow: none;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    margin: 30px 0;
+}
+
+#contact form textarea {
+    resize: none;
+    padding: 15px;
+    box-shadow: none;
+}
+
+#contact form #submit:hover {
+background:var(--main-color1);
+border:var(--main-color1);
+}
+#contact form #submit {
+    margin: 0px;
+    background: transparent;
+    color: #fff;
+    border-color: #fff;
+    padding: 15px;
+    height: 60px;
+}
+
+#contact .form-response {
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    animation: status 4s ease forwards;
+    height: 25px;
+}
+
+@keyframes status{
+    0% {
+        opacity: 1;
+        pointer-events: all;    
+    }
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+
+
+#contact .social-wrapper {
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+#contact .social-wrapper h4 {
+    color: #fff;
+    margin-top: 0px;
+}
+
+#contact .social-wrapper .social-links {
+    margin-top: 20px;
+}
+
+#contact .social-wrapper .icon {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: #555;
+    overflow: hidden;
+    -webkit-transition: background 0.2s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+    transition: background 0.2s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+}
+
+#contact .social-wrapper .icon.fb:hover {
+    background: #3b5998;
+}
+
+#contact .social-wrapper .icon.tw:hover {
+    background: #55acee;
+}
+
+#contact .social-wrapper .icon.gh:hover {
+    background: #333;
+}
+
+#contact .social-wrapper .icon.cp:hover {
+    background: #212121;
+}
+
+#contact .social-wrapper .icon.li:hover {
+    background: #00a0dc;
+}
+
+#contact .social-wrapper .icon.dr:hover {
+    background: #ea4c89;
+}
+
+#contact .social-wrapper .icon.be:hover {
+    background: #1769ff;
+}
+#contact .social-wrapper .icon.gm:hover {
+    background: #cf4036;
+}
+
+#contact .social-wrapper .icon::before {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    font-size: 22px;
+    line-height: 50px;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    color: #eee;
+    -webkit-font-smoothing: antialiased;
+}
+
+#contact .social-wrapper .icon:hover::before {
+    -webkit-animation: icon-to-top 0.3s forwards cubic-bezier(0.68, -0.07, 0.25, 0.93);
+    animation: icon-to-top 0.3s forwards cubic-bezier(0.68, -0.07, 0.25, 0.93);
+}
+
+#contact .social-wrapper .icon.fb::before {
+    content: "\f09a";
+}
+
+#contact .social-wrapper .icon.tw::before {
+    content: "\f099";
+}
+
+#contact .social-wrapper .icon.gh::before {
+    content: "\f09b";
+}
+
+#contact .social-wrapper .icon.cp::before {
+    content: "\f1cb";
+}
+
+#contact .social-wrapper .icon.li::before {
+    content: "\f0e1";
+}
+
+#contact .social-wrapper .icon.dr::before {
+    content: "\f17d";
+}
+
+#contact .social-wrapper .icon.be::before {
+    content: "\f1b4";
+}
+#contact .social-wrapper .icon.gm::before {
+    content: "\f1a0";
+}
+
+@-webkit-keyframes icon-to-top {
+    49% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+
+    50% {
+        opacity: 1;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(100%);
+    }
+
+    51% {
+        opacity: 1;
+    }
+}
+
+@keyframes icon-to-top {
+    49% {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+
+    50% {
+        opacity: 1;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(100%);
+    }
+
+    51% {
+        opacity: 1;
+    }
+}
+
+.wrapper {
+    position: relative;
+}
+
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+span.glyphicon.glyphicon-comment {
+    line-height: 7;
+}
+input{
+    display:block;
+}
+.help-block{
+    
+    display:block;
+    color:#A94442;
+    margin:15px 0 ;
+}
+.para a{
+    color:white;
+    text-decoration:none;
+}

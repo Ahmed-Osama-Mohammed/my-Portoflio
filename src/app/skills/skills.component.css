@@ -1,0 +1,72 @@
+.section {
+    padding: 80px 0 40px;
+}
+#skills {
+    background: #333 url(../../assets/bg3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.overlay::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);
+}
+.section-intro {
+    margin-bottom: 60px;
+}
+#skills h2, #skills p, #skills h3 {
+    color: #fff;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #333;
+    margin-top: 0;
+}
+h2{
+    font-size:30px;
+}
+.separator.centered {
+    margin: 10px auto;
+}
+.separator {
+    background: #f7465b;
+}
+.separator {
+    position: relative;
+    width: 70px;
+    height: 3px;
+    margin: 10px 0;
+}
+#skills p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.section-intro p {
+    width: 75%;
+    margin: 0 auto;
+}
+p.para {
+    font-family: "Open Sans", sans-serif;
+    line-height: 24px;
+}
+#skills h3 {
+    margin-top: 20px;
+}
+.container{
+    position: relative;
+}

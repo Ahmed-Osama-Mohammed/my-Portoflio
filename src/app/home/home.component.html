@@ -1,0 +1,26 @@
+<div id="home" style="height: 100vh;" class="hero-content-wrapper">
+    <!-- Start Content -->
+    <div class=" overlay">
+    <video src="../../assets/bg.mp4" controls muted loop autoplay></video>
+    </div>
+       
+        <!-- Hero Content -->
+        <div class="hero-content text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h1>I'm Ahmed Osama</h1>
+                        <p>Creative<span class="dot"></span>designer<span class="dot"></span>developer</p>
+                        <a [routerLink]='["/portfolio"]' (click)="scroll('portfolio')" class="scroll-link btn btn-custom reverse light">My Works</a>
+                        <a [routerLink]='["/contact"]' (click)="scroll('contact')" class="scroll-link btn btn-custom">Hire Me</a>
+                    </div>
+                </div>
+            </div>				
+        </div>
+
+        <a [routerLink]='["/about-me"]' (click)="scroll('about')" class="go-down scroll-link">
+			<span class="glyphicon glyphicon-menu-down fade-in-out" aria-hidden="true"><i class="fa-solid fa-arrow-down"></i></span>
+		</a>
+    </div>
+    <!-- End Content -->
+   

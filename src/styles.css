@@ -1,0 +1,118 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400|Raleway:400,500");
+@import "~bootstrap/dist/css/bootstrap.css";
+
+
+:root {
+    --main-color1: #f7465b;
+
+
+}
+
+section {
+    padding: 180px 0 40px !important;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    position: relative;
+    line-height: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #333;
+    margin-top: 0;
+}
+
+p.para {
+    font-family: "Open Sans", sans-serif;
+    line-height: 24px;
+    color: #777;
+}
+
+::-moz-selection {
+    color: #fff;
+    background: var(--main-color1);
+
+}
+
+::selection {
+    color: #fff;
+    background: var(--main-color1);
+
+}
+
+/*** 2-b - Helping Classes ***/
+.section {
+    padding: 80px 0 40px;
+}
+
+.section-intro {
+    margin-bottom: 60px;
+}
+
+.section-intro p {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.overlay::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.separator {
+    position: relative;
+    width: 70px;
+    height: 3px;
+    margin: 10px 0;
+}
+
+.separator.centered {
+    margin: 10px auto;
+}
+
+a,
+a:active,
+a:focus {
+    outline: 0 !important;
+    text-decoration: none !important;
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+    ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+    ::-webkit-scrollbar-thumb {
+    background: #888; 
+      border-radius:10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    
+    background: #555; 
+  } 

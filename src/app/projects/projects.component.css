@@ -1,0 +1,282 @@
+.section {
+    padding: 80px 0 40px;
+}
+.section-intro {
+    margin-bottom: 60px;
+}
+h2 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #333;
+    margin-top: 0;
+    font-size: 30px;
+}
+.separator.centered {
+    margin: 10px auto;
+}
+.separator {
+    background: #f7465b;
+}
+.separator {
+    position: relative;
+    width: 70px;
+    height: 3px;
+    margin: 10px 0;
+}
+.section-intro p {
+    width: 75%;
+    margin: 0 auto;
+}
+p.para {
+    font-family: "Open Sans", sans-serif;
+    line-height: 24px;
+    color: #777;
+}
+p.para.project-description{
+    font-family: "Open Sans", sans-serif;
+    line-height: 24px;
+    height: 200px;
+    color: #777;
+    overflow-y: overlay;
+}
+
+#portfolio .project {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 14px #e1dfdf;
+    border: 1px solid #e1dfdf;
+}
+#portfolio .project .project-img-wrapper {
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    height:500px
+}
+.center-block {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+#portfolio .project .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    background: rgba(0,0,0,0.8);
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+#portfolio .project .overlay-text {
+    position: absolute;
+    left: 0px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    bottom: -60px;
+    opacity: 0;
+    -webkit-transition: all 0.5s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+    transition: all 0.5s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+}
+#portfolio .project .overlay-text h4 {
+    color: #fff;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.btn-custom:hover {
+    background: #f7465b;
+}
+.btn-custom:hover, .btn-custom.reverse {
+    color: #fff;
+}
+#portfolio .project:hover .project-img-wrapper {
+    -webkit-transform: scale(1.1) rotate(5deg);
+    -ms-transform: scale(1.1) rotate(5deg);
+    transform: scale(1.1) rotate(5deg);
+    -webkit-transition: all 2s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 2s cubic-bezier(0.23, 1, 0.32, 1);
+}
+#portfolio .project:hover .img-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+#portfolio .project:hover .overlay-text {
+    bottom: 30px;
+    opacity: 1;
+}
+
+.bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: #666667d1;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: none;
+}
+.selected {
+    width: 600px;
+    margin: 30px auto;
+    background: white;
+}
+.selected-header {
+    height: 60px;
+    position: relative;
+}
+h4.title {
+    display: inline-block;
+    line-height: 60px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #333;
+    font-size: 18px;
+    margin-top: 0;
+}
+button.btn-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    padding: 9px;
+    border: 2px solid #aba7a7;
+}
+.selected-header {
+    height: 60px;
+    position: relative;
+    border-bottom: 1px solid #ddd6d6;
+    box-shadow: 0px 0px 5px #aba7a7;
+}
+.selected-img-wrapper {
+    width: 91%;
+    margin: 30px auto;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 440px;
+    overflow: hidden;
+}
+
+.selected-img-wrapper img:hover {
+    position: relative;
+}
+
+.selected-img-wrapper img {
+    width: 100%;
+    border-radius: 4px;
+    position: relative;
+    bottom: 0px;
+    transition: all 1s linear;
+}
+h4{
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #333;
+    margin-top: 0;
+    font-size: 18px;
+}
+.selected-text {
+    text-align: left;
+    padding: 15px 30px 0;
+}
+p{
+font-family: "Open Sans", sans-serif;
+    line-height: 24px;
+    color: #777;
+    margin: 0 0 10px;
+    font-size: 14px;
+}
+a.btn.btn-custom.btn-custom-reverse ,a.btn.btn-custom.dark.scroll-link {
+    border: 1px solid #f7465b;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    border-radius: 0px;
+    padding: 12px 25px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background: transparent;
+    color: #333;
+    -webkit-transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+    transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+    font-size: 14px;
+}
+a.btn.btn-custom.btn-custom-reverse:hover {
+    background: black;
+}
+a.btn.btn-custom.btn-custom-reverse {
+    background: #f7465b;
+    color: white;
+}
+a {
+    margin: 15px 10px 36px;
+}
+    
+.button-sets {
+    text-align: center;
+}
+.btn-custom.dark:hover {
+    background: #222 !important;
+    border: 1px solid transparent !important;
+}
+.btn-custom:hover {
+    background: #f7465b;
+}
+.btn-custom:hover, .btn-custom.reverse {
+    color: #fff !important;
+}
+.is{
+    animation-delay: 200ms;
+}
+.it,.is,.ip,.ib{
+    visibility: hidden;
+}
+@media screen and (min-width: 768px){
+.selected {
+    -webkit-box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+    box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+}
+}
+.selected {
+    position: relative;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #999;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    outline: 0;
+    -webkit-box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+    box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px){
+    .project-img-wrapper{
+        height:425px !important;
+    }
+    }
+@media screen and (min-width: 1000px) and (max-width: 1200px){
+    .project-img-wrapper{
+        height:350px !important;
+    }
+    }
+@media screen and (min-width: 768px) and (max-width: 1000px){
+    .project-img-wrapper{
+        height:275px !important;
+    }
+    }

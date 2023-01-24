@@ -1,0 +1,178 @@
+
+div#home {
+    position: relative;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.overlay::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    z-index: -99;
+}
+
+ .hero-content {
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    position: relative;
+}
+ .hero-content h1 {
+    font-size: 5.5em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1;
+    margin: 0px auto;
+    color: #fff;
+}
+ .hero-content p {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: 2px;
+    margin: 25px auto;
+}
+ .hero-content span.dot {
+    background: var(--main-color1);
+}
+
+ .hero-content span.dot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 4px 20px;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+ .hero-content a {
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0px;
+    margin: 10px;
+    color: #fff;
+}
+.btn-custom.reverse {
+    background: var(--main-color1);
+}
+ .hero-content a {
+    width: 150px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0px;
+    margin: 10px;
+    color: #fff;
+}
+.btn-custom {
+    border: 1px solid var(--main-color1);
+}
+.hero-content-wrapper { 
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+.btn-custom.light:hover {
+    color: var(--main-color1) !important;
+}
+.btn-custom.reverse:hover {
+    border: 1px solid var(--main-color1);
+}
+.btn-custom.light:hover {
+    background: #fff;
+    border: 1px solid transparent !important;
+}
+.btn-custom:hover {
+    background: var(--main-color1);
+}
+.btn-custom:hover, .btn-custom.reverse {
+    color: #fff;
+}
+
+#home .go-down {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    bottom: 40px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #fff;
+    text-align: center;
+    padding-top: 6px;
+    -webkit-transform: translateX(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) rotate(45deg);
+    transform: translateX(-50%) rotate(45deg);
+    -webkit-transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+    transition: all 0.3s cubic-bezier(0.68, -0.07, 0.25, 0.93);
+}
+#home .go-down span {
+    display: inline-block;
+    color: #eee;
+    font-size: 18px;
+    cursor: pointer;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: plink 1s infinite linear;
+    animation: plink 1s infinite linear;
+}
+
+.glyphicon {
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#home .go-down:hover {
+    background: var(--main-color1);
+    border-color: var(--main-color1);
+}
+
+@keyframes plink {
+    0% {
+        opacity: 0;
+    }
+    
+    30% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.fade-in-out{
+    animation: plink 1s infinite linear;
+}
