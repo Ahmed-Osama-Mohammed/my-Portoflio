@@ -19,9 +19,10 @@ import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { SpinnerComponent } from './spinner/spinner.component';
+
 
 import { InterceptorService } from 'src/services/interceptor.service';
-
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { InterceptorService } from 'src/services/interceptor.service';
     SkillsComponent,
     ProjectsComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,

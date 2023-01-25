@@ -16,6 +16,8 @@ export class HomeComponent implements OnInit {
   }
   
   ngOnInit(): void {
+    let x:any=document.querySelector("#vid")
+    x.play()
   }
 
 }
