@@ -176,3 +176,23 @@ video {
 .fade-in-out{
     animation: plink 1s infinite linear;
 }
+
+@media screen and (max-width: 992px){
+    .hero-content{
+        display:unset;
+        position: relative;
+            top: 35%;
+        } 
+        .hero-content h1 {
+            font-size: 9.5vw;
+        }
+        .hero-content p {
+            font-size: 3vw;
+        }
+        .hero-content a {
+            width: 38vw;
+        }
+        .overlay{          
+            height: 100.25vh;
+        }
+}

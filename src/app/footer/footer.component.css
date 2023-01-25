@@ -4,7 +4,6 @@ footer{
   background: #404040;
   height: 50px;
   padding: 1%;
-  width: 102%;
   }
   .red-color{
     color: var(--main-color1) !important

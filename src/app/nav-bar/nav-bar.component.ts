@@ -29,6 +29,13 @@ export class NavBarComponent implements OnInit {
       this.viewportScroller.scrollToAnchor(elementId);},200)
       
   }
+  close(){
+    let element= document.querySelector(".navbar-toggler") as HTMLElement;
+    setTimeout(() => {
+      element.click()
+    
+    }, 500);
+  }
 
 
   ngOnInit(): void {
