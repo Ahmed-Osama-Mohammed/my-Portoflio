@@ -131,7 +131,6 @@ p.para.project-description{
     display: none;
 }
 .selected {
-    width: 600px;
     margin: 30px auto;
     background: white;
 }
@@ -283,3 +282,27 @@ a {
         height:275px !important;
     }
     }
+@media screen and (max-width: 992px){
+    
+a.btn.btn-custom.btn-custom-reverse, a.btn.btn-custom.dark.scroll-link{
+    width: 170px;
+        padding: 12px 0;
+        margin: 2.7vw 2vw 0vw !important;
+    }
+    
+    .button-sets {
+        margin-bottom: 37px;
+    }
+    
+    
+    .selected-body {
+        overflow-y: scroll;
+        height: 88vh;
+    }
+    p.para.project-description{
+        height:21vh
+    }
+    .selected-img-wrapper{
+        height:40vh !important;
+    }
+}
