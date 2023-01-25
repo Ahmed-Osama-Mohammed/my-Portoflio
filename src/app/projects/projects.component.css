@@ -1,3 +1,7 @@
+#portfolio{
+    width: 102%;
+    overflow-x: hidden;
+}
 .section {
     padding: 80px 0 40px;
 }

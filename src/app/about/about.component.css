@@ -1,3 +1,7 @@
+.about{
+    width: 102%;
+    overflow-x: hidden;
+}
 .section {
     padding: 80px 0 40px;
 }
@@ -353,3 +357,6 @@ em {
 .s1,.s2,.s3,.s4,.s5,.s6{
     visibility:hidden;
 }
+
+
+

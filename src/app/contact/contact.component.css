@@ -4,6 +4,8 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    width: 102%;
+    overflow-x: hidden;
 }
 
 .section {
