@@ -1,3 +1,4 @@
+import { LoaderService } from './../services/loader.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'My Portfolio';
+
+  constructor(public loader:LoaderService){}
+  ngAfterViewInit(){
+    this.loader.setLoading(false)
+  }
 }

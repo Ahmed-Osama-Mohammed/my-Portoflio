@@ -1,3 +1,4 @@
+import { LoaderService } from './../../services/loader.service';
 import { Component, OnInit } from '@angular/core';
 import { ViewportScroller } from '@angular/common';
 
@@ -8,17 +9,21 @@ import { ViewportScroller } from '@angular/common';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private viewportScroller: ViewportScroller) { }
+  constructor(private viewportScroller: ViewportScroller ,public loader:LoaderService) { }
 
   public scroll(elementId: string): void { setTimeout(()=>{
     this.viewportScroller.scrollToAnchor(elementId);},200)
     
   }
+  stopLoading(){
+    
+  }
   
+
   ngOnInit(): void {
     let x:any=document.querySelector("#vid")
     x.play()
-  }
-
+    
+}
 }
 
