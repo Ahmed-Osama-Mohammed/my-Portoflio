@@ -453,6 +453,6 @@ input:-moz-placeholder {
     color:#eee
 }
 
-input::placeholder {
+input::placeholder ,textarea::placeholder{
     color:#eee
 }
