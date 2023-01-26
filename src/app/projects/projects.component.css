@@ -248,11 +248,9 @@ a {
 .it,.is,.ip,.ib{
     visibility: hidden;
 }
-@media screen and (min-width: 768px){
-.selected {
-    -webkit-box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
-    box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
-}
+.ip{
+    margin: 0 auto;
+    width: 50%;
 }
 .selected {
     position: relative;
@@ -265,6 +263,15 @@ a {
     outline: 0;
     -webkit-box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
     box-shadow: 0 3px 9px rgb(0 0 0 / 50%);
+}
+.selected-body {
+    overflow-y: scroll;
+}
+@media screen and (min-width: 768px){
+.selected {
+    -webkit-box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+    box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+}
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1400px){
@@ -296,7 +303,6 @@ a.btn.btn-custom.btn-custom-reverse, a.btn.btn-custom.dark.scroll-link{
     
     
     .selected-body {
-        overflow-y: scroll;
         height: 88vh;
     }
     p.para.project-description{
@@ -304,5 +310,9 @@ a.btn.btn-custom.btn-custom-reverse, a.btn.btn-custom.dark.scroll-link{
     }
     .selected-img-wrapper{
         height:40vh !important;
+    }
+    .ip{
+        margin: 0 auto;
+        width: 90%;
     }
 }
