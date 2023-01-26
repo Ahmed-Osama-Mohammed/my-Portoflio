@@ -431,3 +431,28 @@ input{
     color:white;
     text-decoration:none;
 }
+
+
+input::-webkit-input-placeholder {
+    color:#eee
+}
+
+input::-ms-input-placeholder {
+    color:#eee
+}
+
+input:-ms-input-placeholder {
+    color:#eee
+}
+
+input::-moz-placeholder {
+    color:#eee
+}
+
+input:-moz-placeholder {
+    color:#eee
+}
+
+input::placeholder {
+    color:#eee
+}
