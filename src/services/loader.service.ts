@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class LoaderService {
 
-  private loading: boolean = true;
+  private loading: boolean = false;
 
   constructor() { }
 
