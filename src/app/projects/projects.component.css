@@ -266,6 +266,7 @@ a {
 }
 .selected-body {
     overflow-y: scroll;
+    height:88vh;
 }
 @media screen and (min-width: 768px){
 .selected {
