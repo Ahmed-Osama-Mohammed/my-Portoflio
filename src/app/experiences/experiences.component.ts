@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-experiences',
   templateUrl: './experiences.component.html',
   styleUrls: ['./experiences.component.css']
 })
-export class ExperiencesComponent implements OnInit {
+export class ExperiencesComponent implements OnInit ,OnDestroy {
 
   constructor() { }
 
@@ -27,7 +27,11 @@ export class ExperiencesComponent implements OnInit {
     this.doAnimation(".er2",713,'animate__fadeInUp',.5) 
     this.doAnimation(".el3",1146,'animate__fadeInUp',.5) 
     this.doAnimation(".er3",1146,'animate__fadeInUp',.5) 
+    this.doAnimation(".el4",1679,'animate__fadeInUp',.5) 
+    this.doAnimation(".er4",1679,'animate__fadeInUp',.5) 
     }
   }
-
+ngOnDestroy(): void {
+  window.onscroll=null
+}
 }

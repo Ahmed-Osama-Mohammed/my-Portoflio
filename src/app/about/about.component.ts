@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ViewportScroller } from '@angular/common';
 import { Router, NavigationEnd } from '@angular/router';
 
@@ -8,7 +8,7 @@ import { Router, NavigationEnd } from '@angular/router';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
-export class AboutComponent implements OnInit {
+export class AboutComponent implements OnInit ,OnDestroy {
 
   constructor(private viewportScroller: ViewportScroller,private router:Router) { }
 
@@ -60,6 +60,9 @@ doAnimation(element:string,px:number,animationClass:string,delay?:number) {
 
       }
      }
+     ngOnDestroy(): void {
+      window.onscroll=null
+    }
 
   }
 
